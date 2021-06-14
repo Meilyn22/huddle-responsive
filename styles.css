@@ -1,0 +1,181 @@
+:root {
+
+    /* primary colors */
+    --violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --txt-color: white; 
+    --fw-h1: 600;
+    --fw-h2: 400;
+    --fw-body: 400;
+
+}
+
+/* General Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--fw-body);
+    background: url(images/bg-mobile.svg) no-repeat top center/ contain;
+    background-color: var(--violet);
+}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Poppins', sans-serif;}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.header, .body__section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    position: static;
+} 
+
+.header__image {
+    margin-top: 5.4em;
+}
+
+.body__section {
+    margin-top: 3.7em;
+
+}
+
+.body__title, .body__subtitle {
+    color: var(--txt-color);
+}
+
+.body__title {
+    margin-bottom: .6em;
+}
+
+.btn {
+    display: block;
+    margin-top: 1em;
+    padding: 11px 3px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    width: 70%;
+    margin: 2em auto 5em auto;
+}
+
+
+
+.desktop__bg {
+    display: none;
+}
+
+.logo__img {
+    position: relative;
+    max-width: 42%;
+    left: -5.7em;
+    top: 1.9em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.socialnet {
+    color: var(--txt-color);
+    margin-left: .7em;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .5em;
+    
+
+}
+
+
+/* Styles for Desktop */
+
+@media (min-width: 1440px) {
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: var(--fw-body);
+        background: url(images/bg-desktop.svg) no-repeat top center / contain;
+        background-color: var(--violet);
+        height: 100vh;
+
+    }
+
+    
+
+    .logo__img {
+        position: relative;
+        max-width: 31%;
+        left: -17.7em;
+        top: 2.9em;
+    } 
+
+    .header {
+    height: 86vh;
+    }
+
+    .header__image {
+        margin-top: 5.4em;
+        height: 65vh;
+        
+
+    }
+
+    .body__title {
+        margin-bottom: .6em;
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    .body__subtitle {
+        width: 90%;
+    }
+
+    .desktop__container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 94vh;
+    }
+
+    .body__section {
+        display: block;
+        text-align: left;
+        width: 80%;
+        margin: auto auto auto -45px;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        margin-top: 1em;
+        margin-left: 0em;
+        padding: 12px 3px;
+        background-color: white;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        width: 50%;
+    }
+
+    .social {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5em;
+    }
+
+}
+
